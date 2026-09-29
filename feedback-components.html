@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes de Feedback - Conexão Solidária</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabecalho Institucional -->
+  <header class="site-header container header-inner">
+    <a href="index.html" class="logo">Conexão Solidária</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+    <nav class="primary-nav" aria-label="Navegação Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos Sociais</a></li>
+        <li><a href="cadastro.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteudo Principal -->
+  <main class="container">
+
+    <!-- Titulo da Pagina -->
+    <section class="hero" style="text-align: center; padding: var(--space-8) var(--space-6);">
+      <h1>Componentes de Feedback e Micro-interações</h1>
+      <p>Padronização de etiquetas semânticas, caixas de alerta, notificações toast e modais interativos integrados ao Design System da ONG Conexão Solidária.</p>
+    </section>
+
+    <!-- Secao 1: Badges de Categorizacao Semantica -->
+    <section class="card" style="margin-bottom: var(--space-8);">
+      <header>
+        <h2>1. Categorização por Etiquetas (Badges)</h2>
+        <p>Identificadores semânticos compactos para status de projetos, inscrições e prioridades de atendimento.</p>
+      </header>
+      <article style="display: flex; flex-wrap: wrap; gap: var(--space-3); padding: var(--space-4) 0;">
+        <span class="badge badge-success">Projeto Ativo</span>
+        <span class="badge badge-warning">Em Análise</span>
+        <span class="badge badge-error">Urgente</span>
+        <span class="badge badge-primary">Doações Abertas</span>
+        <span class="badge badge-neutral">Concluído</span>
+      </article>
+      <footer>
+        <small style="color: var(--color-neutral-600);">Aplicados em listagens de iniciativas sociais, cards de voluntários e painéis de prestação de contas.</small>
+      </footer>
+    </section>
+
+    <!-- Secao 2: Caixas de Alerta Configuradas -->
+    <section class="card" style="margin-bottom: var(--space-8);">
+      <header>
+        <h2>2. Caixas de Alerta Contextuais</h2>
+        <p>Sinalizações de retorno em tempo real baseadas na resposta das operações do usuário.</p>
+      </header>
+      
+      <aside class="alert alert-success" role="alert">
+        <section>
+          <strong>Cadastro Concluído com Sucesso!</strong>
+          <p>Sua manifestação de interesse para voluntariado foi registrada em nossa base de dados. Em breve nossa equipe entrará em contato.</p>
+        </section>
+      </aside>
+
+      <aside class="alert alert-warning" role="alert">
+        <section>
+          <strong>Atenção: Vagas Limitadas</strong>
+          <p>O projeto "Oficina de Costura e Renda" atingiu 90% da capacidade total de alunos para este semestre.</p>
+        </section>
+      </aside>
+
+      <aside class="alert alert-error" role="alert">
+        <section>
+          <strong>Erro no Processamento dos Dados</strong>
+          <p>Não foi possível validar o CPF inserido. Por favor, revise os dígitos informados e tente novamente.</p>
+        </section>
+      </aside>
+
+      <aside class="alert alert-info" role="alert">
+        <section>
+          <strong>Informação Institucional</strong>
+          <p>As coletas de alimentos acontecem todos os sábados das 08h às 14h na sede central da ONG.</p>
+        </section>
+      </aside>
+    </section>
+
+    <!-- Secao 3: Apresentacao Semantica de Modal Interativo -->
+    <section class="card" style="margin-bottom: var(--space-8);">
+      <header>
+        <h2>3. Modal Semântico de Confirmação</h2>
+        <p>Caixa de diálogo acessível para confirmação de ações críticas e termos de voluntariado.</p>
+      </header>
+      
+      <!-- Visualizacao Estilizada do Modal -->
+      <article style="background-color: var(--color-neutral-100); padding: var(--space-6); border-radius: 8px;">
+        <section class="modal-dialog" style="margin: 0 auto; box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
+          <header class="modal-header">
+            <h3>Confirmar Inscrição Solidária</h3>
+            <button type="button" class="toast-close" aria-label="Fechar">&times;</button>
+          </header>
+          <section class="modal-body">
+            <p>Você está prestes a se inscrever como voluntário no projeto <strong>"Prato Cheio Solidário"</strong> para a escala de distribuição de cestas aos sábados.</p>
+            <p style="margin-top: var(--space-3); font-size: var(--font-size-sm); color: var(--color-neutral-600);">Deseja confirmar a participação e receber o roteiro de orientação por e-mail?</p>
+          </section>
+          <footer class="modal-footer">
+            <button type="button" class="btn btn-outline" style="padding: var(--space-2) var(--space-4);">Cancelar</button>
+            <button type="button" class="btn btn-primary" style="padding: var(--space-2) var(--space-4);">Confirmar Participação</button>
+          </footer>
+        </section>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Notificacao Toast Flutuante -->
+  <aside class="toast-container" aria-live="polite">
+    <section class="toast">
+      <article class="toast-content">
+        <strong>Notificação do Sistema</strong>
+        <p>Dados enviados para a ONG com sucesso!</p>
+      </article>
+      <button type="button" class="toast-close" aria-label="Fechar notificação">&times;</button>
+    </section>
+  </aside>
+
+  <!-- Rodape -->
+  <footer class="site-footer">
+    <p>&copy; 2026 ONG Conexão Solidária. Todos os direitos reservados.</p>
+    <p>Projeto acadêmico - CST Análise e Desenvolvimento de Sistemas.</p>
+  </footer>
+
+</body>
+</html>
