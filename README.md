@@ -60,7 +60,7 @@ experiencia-pratica-4/
 
 ---
 
-## ♿ Acessibilidade Implementada (WCAG 2.1 AA)
+##  Acessibilidade Implementada (WCAG 2.1 AA)
 
 - **Skip Link:** atalho no início da página que permite ao usuário de teclado ir direto para `#conteudo-principal`.
 - **Navegação por Teclado:** foco visível (`:focus-visible`) em todos os botões, links e campos ao usar a tecla `Tab`.
