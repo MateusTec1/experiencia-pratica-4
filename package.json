@@ -1,0 +1,11 @@
+{
+  "name": "experiencia-pratica-4-ong",
+  "version": "1.0.0",
+  "description": "Plataforma Web para o Terceiro Setor - Instituto Conexão Solidária (Experiência Prática IV)",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "npx serve dist"
+  },
+  "author": "Mateus Pereira Ruas",
+  "license": "MIT"
+}
