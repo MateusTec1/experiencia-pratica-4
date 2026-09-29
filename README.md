@@ -1,75 +1,92 @@
-﻿# Plataforma Web para o Terceiro Setor: Instituto Conexão Solidária
+﻿# Projeto Front-End - ONG Conexão Solidária (Experiência Prática IV)
 
-> **Disciplina:** Desenvolvimento Front-End  
-> **Atividade:** Experiência Prática I  
-> **Estudante:** Mateus  
-> **Padrões:** HTML5 Semântico, CSS3 Responsivo, Acessibilidade WCAG 2.1 (Nível AA), Validações Nativas e Máscaras de Entrada.
+Este projeto foi desenvolvido para a disciplina de **Desenvolvimento Front-End (Experiência Prática IV)** do curso de Análise e Desenvolvimento de Sistemas.
 
----
-
-## 1. Visão Geral do Projeto
-
-O terceiro setor brasileiro reúne mais de 820 mil organizações da sociedade civil e movimenta R$ 15 bilhões anuais, gerando cerca de 3 milhões de postos de trabalho. Contudo, menos de 30% dessas instituições possuem presença digital adequada.
-
-Este projeto propõe uma plataforma web profissional, acessível e responsiva para o **Instituto Conexão Solidária**, viabilizando:
-1. Apresentação institucional clara de sua missão, visão e impacto social;
-2. Divulgação transparente das iniciativas solidárias e prestação de contas dos recursos arrecadados;
-3. Engajamento ativo de novos apoiadores por meio de um formulário com rigorosa validação nativa de dados (CPF, Telefone, CEP, LGPD).
+Trata-se do site de uma ONG fictícia voltada para apoio social e comunitário, desenvolvido com HTML5 semântico, CSS3 responsivo, acessibilidade (WCAG 2.1 AA) e boas práticas de versionamento com GitFlow no GitHub.
 
 ---
 
-## 2. Estrutura de Diretórios
+## 📌 O que foi feito nesta etapa
 
-O projeto segue a padronização e boas práticas de arquitetura front-end:
+Nesta quarta etapa, o foco foi estruturar o fluxo de desenvolvimento profissional e garantir que a aplicação esteja acessível e pronta para deploy:
+
+1. **Versionamento com GitFlow:** criação das branches `main`, `develop` e `feature/*`, com commits semânticos e tag de release (`v1.0.0`).
+2. **Acessibilidade (WCAG 2.1 AA):** inclusão de atalho para pular direto para o conteúdo principal (*skip link*), navegação por teclado com foco visível, bom contraste de cores e formulários acessíveis com `<label>` associado.
+3. **Otimização e Build:** criação de um script simples em Node.js (`scripts/build.js`) para minificar CSS e JavaScript gerando a pasta `dist/` para produção.
+
+---
+
+## 🌳 Estrutura do GitFlow
+
+O repositório foi organizado da seguinte forma:
+
+- `main`: código estável e pronto para publicação (produção / releases).
+- `develop`: branch onde as funcionalidades foram reunidas e testadas.
+- `feature/documentacao-readme`: branch onde este README foi estruturado.
+- `feature/acessibilidade-wcag`: implementação dos skip links e melhorias de acessibilidade.
+- `feature/otimizacao-deploy`: criação do script de build e configuração do projeto para produção.
+
+### Padrão de Commits Utilizado
+
+Para organizar as mensagens de commit, utilizei a convenção do Conventional Commits:
+
+- `feat:` quando uma funcionalidade nova é criada
+- `fix:` para correções de código ou layout
+- `docs:` para alterações nesta documentação
+- `perf:` para melhorias de desempenho e minificação
+- `chore:` para configurações iniciais do projeto
+
+---
+
+## 📁 Estrutura de Pastas
 
 ```text
-plataforma-ong/
-├── index.html              # Página Inicial (Apresentação Institucional e Indicadores)
-├── projetos.html           # Iniciativas Solidárias (Cards de Projetos e Tabela de Contas)
-├── cadastro.html           # Ficha de Inscrição (Formulário Interativo e Validações)
+experiencia-pratica-4/
+├── index.html           # Página inicial da ONG
+├── projetos.html        # Página de projetos e prestação de contas
+├── cadastro.html        # Formulário de voluntários e doadores
 ├── css/
-│   └── style.css           # Estilização responsiva, semântica e acessível (WCAG AA)
+│   ├── style.css        # Estilos gerais do site
+│   └── design-system.css# Cores, espaçamentos e componentes
 ├── js/
-│   └── masks.js            # Máscaras de formatação em tempo real (CPF, Celular e CEP)
-├── assets/
-│   └── images/             # Logotipo e ilustrações vetoriais em formato SVG
-│       ├── logo.svg
-│       ├── hero-ong.svg
-│       ├── educacao.svg
-│       ├── alimento.svg
-│       └── oficina.svg
-└── README.md               # Documentação técnica e guia de conformidade
+│   ├── script.js        # Interações de tela e menu
+│   └── masks.js         # Máscaras de CPF, telefone e CEP
+├── assets/images/       # Imagens e ícones em SVG
+├── scripts/
+│   └── build.js         # Script que minifica CSS/JS e gera a pasta dist/
+├── package.json         # Scripts de automação do projeto
+└── README.md            # Documentação do projeto
 ```
 
 ---
 
-## 3. Conformidade Semântica e Acessibilidade (HTML5 & WCAG)
+## ♿ Acessibilidade Implementada (WCAG 2.1 AA)
 
-### Elementos Semânticos Utilizados
-- `<header>` e `<footer role="contentinfo">`: definição estrutural do cabeçalho e rodapé em todas as páginas.
-- `<nav aria-label="...">`: navegação principal com links identificados e estado ativo via `aria-current="page"`.
-- `<main id="conteudo-principal">`: área de conteúdo central associada ao mecanismo de acessibilidade *Skip Link* (`<a href="#conteudo-principal" class="skip-link">`).
-- `<section>` e `<article>`: segmentação temática de blocos e cartões independentes de projetos sociais.
-- `<figure>` e `<figcaption>`: marcação semântica de ilustrações e imagens contextuais com descrição acessível (`alt`).
-- `<table>`, `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`, `<th scope="col/row">`: estruturação da prestação orçamentária para leitura linearizada por tecnologias assistivas.
-
-### Formulário Avançado e Validações Nativas (`cadastro.html`)
-- **Agrupamento Lógico**: uso de `<fieldset>` e `<legend>` para categorizar dados pessoais, localização, perfil de apoio e privacidade.
-- **Validações Nativas do HTML5**:
-  - `required`: campos essenciais que impedem o envio em branco.
-  - `type="email"` e `type="tel"`: validação nativa do navegador para formato de correio eletrônico e teclado numérico em dispositivos móveis.
-  - `type="date"` com restrições `min="1920-01-01"` e `max="2010-12-31"`: garantia de colaboradores com idade compatível.
-  - Expressões Regulares (`pattern`):
-    - **CPF:** `\d{3}\.\d{3}\.\d{3}-\d{2}`
-    - **Telefone:** `\(\d{2}\)\s\d{4,5}-\d{4}`
-    - **CEP:** `\d{5}-\d{3}`
-  - Atributos `autocomplete` para preenchimento ágil e acessível (`name`, `email`, `tel`, `postal-code`, `street-address`).
-- **Máscaras de Entrada (`js/masks.js`)**: formatação progressiva e não obstrutiva durante a digitação do usuário, impedindo caracteres alfabéticos em campos numéricos.
+- **Skip Link:** atalho no início da página que permite ao usuário de teclado ir direto para `#conteudo-principal`.
+- **Navegação por Teclado:** foco visível (`:focus-visible`) em todos os botões, links e campos ao usar a tecla `Tab`.
+- **Semântica HTML5:** uso de tags estruturais (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
+- **Formulários:** campos com `<label>` associados via `id`/`for`, agrupamentos com `<fieldset>` e avisos claros de validação.
+- **Imagens:** todas as imagens com atributo `alt` preenchido.
+- **Contraste:** cores escolhidas para garantir boa leitura tanto em textos normais quanto em títulos.
 
 ---
 
-## 4. Como Executar e Validar
+## 🚀 Como Executar
 
-1. **Execução Local**: Abra qualquer um dos arquivos (`index.html`, `projetos.html`, `cadastro.html`) em qualquer navegador moderno (Chrome, Edge, Firefox, Safari).
-2. **Validação W3C**: O código pode ser submetido diretamente no [W3C Markup Validation Service](https://validator.w3.org/), garantindo conformidade estrita aos padrões web sem avisos críticos.
-3. **Navegação Acessível**: Pressione a tecla `Tab` para navegar por todos os elementos interativos, verificar o funcionamento do *Skip Link* e observar o contorno visível de foco (`:focus-visible`).
+### 1. Testar no navegador
+Basta abrir o arquivo `index.html` em qualquer navegador moderno (Chrome, Edge, Firefox).
+
+### 2. Rodar o build de produção (opcional)
+Se tiver o Node.js instalado no computador:
+```bash
+npm run build
+```
+Os arquivos minificados serão gerados automaticamente na pasta `dist/`.
+
+---
+
+## 👤 Autor
+
+- **Nome:** Mateus Pereira Ruas
+- **Usuário GitHub:** [@MateusTec1](https://github.com/MateusTec1)
+- **Curso:** CST em Análise e Desenvolvimento de Sistemas
