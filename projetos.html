@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos sociais e prestação de contas transparente do Instituto Conexão Solidária.">
+  <title>Projetos Sociais | Instituto Conexão Solidária</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="site-header container header-inner">
+    <a href="index.html" class="logo">Conexão Solidária</a>
+    <nav aria-label="Navegação Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html" class="active" aria-current="page">Projetos Sociais</a></li>
+        <li><a href="cadastro.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    
+    <!-- Seção 1: Projetos Sociais com h1 -> h2 nos cards (sem pular níveis) -->
+    <section style="margin-top: var(--space-8); margin-bottom: var(--space-10);">
+      <header style="margin-bottom: var(--space-6);">
+        <p class="section-subtitle">Nossas Ações</p>
+        <h1 style="font-size: var(--font-size-2xl); margin-bottom: var(--space-2);">Iniciativas em Andamento</h1>
+        <p style="color: var(--color-neutral-700);">
+          Conheça as frentes de ação que recebem o suporte dos nossos voluntários e doações da comunidade.
+        </p>
+      </header>
+
+      <ul class="cards-grid" style="list-style: none; padding: 0; margin: 0;">
+        
+        <li class="card">
+          <article>
+            <h2>Inclusão Digital para Jovens</h2>
+            <p>
+              Oficinas gratuitas de alfabetização digital, lógica de programação básica e montagem de computadores para adolescentes da rede pública.
+            </p>
+            <p><strong>Meta:</strong> 120 alunos certificados</p>
+            <a href="cadastro.html" class="btn btn-outline" style="display: block; width: 100%; text-align: center;">Apoiar Causa</a>
+          </article>
+        </li>
+
+        <li class="card">
+          <article>
+            <h2>Nutrição Solidária</h2>
+            <p>
+              Distribuição quinzenal de cestas com alimentos frescos da agricultura familiar e refeições preparadas em nossa cozinha comunitária.
+            </p>
+            <p><strong>Meta:</strong> 350 famílias mensalmente</p>
+            <a href="cadastro.html" class="btn btn-outline" style="display: block; width: 100%; text-align: center;">Apoiar Causa</a>
+          </article>
+        </li>
+
+        <li class="card">
+          <article>
+            <h2>Reforço Escolar Comunitário</h2>
+            <p>
+              Acompanhamento pedagógico em matemática e língua portuguesa no contraturno escolar, reduzindo a evasão no ensino fundamental.
+            </p>
+            <p><strong>Meta:</strong> 80 crianças atendidas</p>
+            <a href="cadastro.html" class="btn btn-outline" style="display: block; width: 100%; text-align: center;">Apoiar Causa</a>
+          </article>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- Seção 2: Transparência e Prestação de Contas -->
+    <section style="margin-bottom: var(--space-12);">
+      <header>
+        <h2 class="section-title">Transparência e Prestação de Contas</h2>
+        <p style="color: var(--color-neutral-700); margin-bottom: var(--space-4);">
+          A credibilidade do terceiro setor depende da clareza na aplicação dos recursos arrecadados. Confira a prestação trimestral:
+        </p>
+      </header>
+
+      <figure class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Iniciativa / Rubrica</th>
+              <th scope="col">Orçamento Previsto</th>
+              <th scope="col">Valor Executado</th>
+              <th scope="col">Conformidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Inclusão Digital (Equipamentos e Monitores)</td>
+              <td>R$ 18.000,00</td>
+              <td>R$ 17.450,00</td>
+              <td>Regular (97%)</td>
+            </tr>
+            <tr>
+              <td>Nutrição Solidária (Insumos e Transporte)</td>
+              <td>R$ 24.000,00</td>
+              <td>R$ 23.820,00</td>
+              <td>Regular (99%)</td>
+            </tr>
+            <tr>
+              <td>Reforço Escolar (Material Didático)</td>
+              <td>R$ 12.000,00</td>
+              <td>R$ 11.600,00</td>
+              <td>Regular (96%)</td>
+            </tr>
+            <tr>
+              <td>Manutenção Administrativa e Auditoria</td>
+              <td>R$ 6.000,00</td>
+              <td>R$ 5.910,00</td>
+              <td>Regular (98%)</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total Geral Executado</td>
+              <td>R$ 60.000,00</td>
+              <td>R$ 58.780,00</td>
+              <td>Aprovado em Conselho</td>
+            </tr>
+          </tfoot>
+        </table>
+        <figcaption style="font-size: var(--font-size-xs); color: var(--color-neutral-500); margin-top: 8px;">Demonstrativo consolidado de aplicação orçamentária auditado pelo comitê acadêmico fiscal.</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="site-footer">
+    <section class="container footer-content" aria-labelledby="footer-title-proj">
+      <h2 id="footer-title-proj" style="font-size: var(--font-size-base); margin-bottom: var(--space-2);">Instituto Conexão Solidária (Organização Fictícia)</h2>
+      <p>Este website é um protótipo puramente acadêmico, sem vínculo institucional real, fins comerciais ou arrecadação financeira.</p>
+      <p><strong>CNPJ Simulado:</strong> 00.000.000/0001-00</p>
+      <address style="font-style: normal; line-height: 1.6; margin: 12px 0;">
+        Rua dos Projetos Acadêmicos, 100 - Campus Universitário<br>
+        São Paulo - SP, CEP 00000-000 (Endereço Simulado)<br>
+        Telefone: (11) 90000-0000 (Linha Fictícia de Teste)<br>
+        E-mail: mateus.ruas@cs.cruzeirodosul.edu.br
+      </address>
+      <p class="footer-legal">&copy; 2026 Instituto Conexão Solidária. Trabalho de faculdade desenvolvido para a disciplina de Desenvolvimento Front-End - Experiência Prática I | Estudante: Mateus Pereira Ruas | Universidade Cruzeiro do Sul.</p>
+    </section>
+  </footer>
+
+</body>
+</html>

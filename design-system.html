@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System Showcase | Instituto Conexao Solidaria</title>
+  <link rel="stylesheet" href="css/design-system.css">
+  <style>
+    .page-wrapper {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: var(--space-8) var(--space-4);
+    }
+    .header-banner {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: #FFFFFF;
+      padding: var(--space-8);
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--space-8);
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-4);
+    }
+    .swatch-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: var(--space-3);
+      margin-top: var(--space-3);
+    }
+    .swatch-card {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: var(--space-2);
+      background: var(--bg-surface);
+      text-align: center;
+    }
+    .swatch-color {
+      height: 48px;
+      border-radius: var(--radius-sm);
+      margin-bottom: var(--space-2);
+    }
+    .section-title {
+      font-size: var(--font-size-xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--text-primary);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: var(--space-2);
+      margin-top: var(--space-8);
+      margin-bottom: var(--space-4);
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    
+    <header class="header-banner">
+      <span class="ds-badge ds-badge-primary" style="background: rgba(255,255,255,0.2); color: #FFF; margin-bottom: var(--space-3);">
+        Fundamentacao Front-End | WCAG 2.1 AA
+      </span>
+      <h1 style="font-size: var(--font-size-2xl); font-weight: 700; margin-bottom: var(--space-2);">
+        Design System do Terceiro Setor
+      </h1>
+      <p style="font-size: var(--font-size-base); opacity: 0.95;">
+        Catalogo centralizado de tokens (:root), escala modular de 4px, hierarquia tipografica e componentes acessiveis para o Instituto Conexao Solidaria.
+      </p>
+    </header>
+
+    <!-- Secao 1: Paleta de Cores -->
+    <section>
+      <h2 class="section-title">1. Paleta de Cores e Contraste</h2>
+      
+      <h3 style="font-size: var(--font-size-lg); font-weight: 600;">Cores de Acao e Destaque</h3>
+      <div class="swatch-group">
+        <div class="swatch-card">
+          <div class="swatch-color" style="background-color: var(--color-primary);"></div>
+          <strong>Primary</strong><br><small>#2563EB</small>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background-color: var(--color-primary-hover);"></div>
+          <strong>Primary Hover</strong><br><small>#1D4ED8</small>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background-color: var(--color-secondary);"></div>
+          <strong>Secondary</strong><br><small>#4F46E5</small>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background-color: var(--color-accent);"></div>
+          <strong>Accent</strong><br><small>#0891B2</small>
+        </div>
+      </div>
+
+      <h3 style="font-size: var(--font-size-lg); font-weight: 600; margin-top: var(--space-6);">Cores Semanticas</h3>
+      <div class="swatch-group">
+        <div class="swatch-card">
+          <div class="swatch-color" style="background-color: var(--color-success);"></div>
+          <strong>Success</strong><br><small>#16A34A</small>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background-color: var(--color-warning);"></div>
+          <strong>Warning</strong><br><small>#D97706</small>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background-color: var(--color-danger);"></div>
+          <strong>Danger</strong><br><small>#DC2626</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secao 2: Componentes ao Vivo -->
+    <section>
+      <h2 class="section-title">2. Componentes Construidos com o Design System</h2>
+      
+      <div class="grid-2">
+        <!-- Card 1: Projeto Social -->
+        <article class="ds-card">
+          <span class="ds-badge ds-badge-primary">Educacao e Inclusao</span>
+          <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: var(--space-3) 0 var(--space-2) 0;">
+            Capacitacao Digital Comunitaria
+          </h3>
+          <p style="font-size: var(--font-size-base); color: var(--text-secondary); margin-bottom: var(--space-4);">
+            Formacao profissional gratuita em tecnologia para jovens em vulnerabilidade social.
+          </p>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <button class="ds-btn ds-btn-primary">Apoiar Projeto</button>
+            <button class="ds-btn ds-btn-outline">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- Card 2: Formulario com Validacao -->
+        <div class="ds-card">
+          <h3 style="font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--space-4);">
+            Ficha de Apoio Voluntario
+          </h3>
+          <div class="ds-form-group">
+            <label class="ds-label" for="txt-nome">Nome Completo</label>
+            <input class="ds-input" type="text" id="txt-nome" placeholder="Ex: Maria da Silva">
+            <span class="ds-hint">Conforme documento oficial de identificacao.</span>
+          </div>
+          <div class="ds-form-group">
+            <label class="ds-label" for="txt-email">E-mail de Contato</label>
+            <input class="ds-input ds-input-error" type="email" id="txt-email" value="email-invalido@">
+            <span class="ds-error-msg">Por favor, informe um endereco de e-mail valido.</span>
+          </div>
+          <button class="ds-btn ds-btn-secondary" style="width: 100%;">Concluir Cadastro</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

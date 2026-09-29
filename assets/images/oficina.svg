@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Oficinas de Geração de Renda">
+  <defs>
+    <linearGradient id="gradCraft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="16" fill="url(#gradCraft)" />
+  <circle cx="80" cy="50" r="70" fill="#FFFFFF" opacity="0.08" />
+  <circle cx="330" cy="190" r="90" fill="#FFFFFF" opacity="0.06" />
+  <!-- Ícone de ferramentas / tesoura / artesanato / máquina -->
+  <g transform="translate(145, 45)">
+    <!-- Engrenagem e lâmpada simbolizando inovação e ofício -->
+    <circle cx="55" cy="50" r="30" fill="#FEF3C7" />
+    <!-- Lâmpada -->
+    <path d="M47 35 C47 28 63 28 63 35 C63 42 59 45 59 50 L51 50 C51 45 47 42 47 35 Z" fill="#D97706" />
+    <rect x="52" y="52" width="6" height="3" rx="1" fill="#78350F" />
+    <rect x="53" y="56" width="4" height="2" rx="1" fill="#78350F" />
+    <!-- Mãos de apoio -->
+    <path d="M25 80 Q55 60 85 80" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" />
+  </g>
+  <text x="200" y="195" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">
+    Oficinas de Geração de Renda
+  </text>
+  <text x="200" y="218" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="13" fill="#FEF3C7">
+    Artesanato, costura e empreendedorismo social
+  </text>
+</svg>

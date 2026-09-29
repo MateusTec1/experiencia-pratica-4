@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="Logotipo Instituto Conexão Solidária">
+  <defs>
+    <linearGradient id="gradBrand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E7490" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+  <!-- Ícone estilizado de mãos/coração entrelaçados -->
+  <g transform="translate(10, 12)">
+    <circle cx="28" cy="28" r="26" fill="url(#gradBrand)" />
+    <path d="M28 42 C18 34 14 26 14 20 C14 15.5 17.5 12 22 12 C24.8 12 27.2 13.5 28 15 C28.8 13.5 31.2 12 34 12 C38.5 12 42 15.5 42 20 C42 26 38 34 28 42 Z" fill="#FFFFFF" opacity="0.95" />
+    <circle cx="28" cy="24" r="3.5" fill="#0E7490" />
+  </g>
+  <!-- Tipografia da marca -->
+  <text x="75" y="36" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#0F172A">
+    CONEXÃO
+    <tspan fill="#047857">SOLIDÁRIA</tspan>
+  </text>
+  <text x="75" y="54" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" letter-spacing="1.5" fill="#64748B">
+    INSTITUTO SOCIAL &middot; DESDE 2014
+  </text>
+</svg>

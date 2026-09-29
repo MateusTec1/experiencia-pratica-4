@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Segurança Alimentar e Prato Solidário">
+  <defs>
+    <linearGradient id="gradFood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="16" fill="url(#gradFood)" />
+  <circle cx="60" cy="50" r="80" fill="#FFFFFF" opacity="0.06" />
+  <circle cx="330" cy="180" r="100" fill="#FFFFFF" opacity="0.08" />
+  <!-- Cesta e Maçã / Alimentos -->
+  <g transform="translate(145, 45)">
+    <!-- Prato e talheres estilizados / cesta -->
+    <path d="M15 65 Q55 115 95 65 Z" fill="#D97706" />
+    <ellipse cx="55" cy="65" rx="40" ry="12" fill="#F59E0B" />
+    <!-- Frutas dentro -->
+    <circle cx="42" cy="52" r="16" fill="#EF4444" />
+    <path d="M42 36 Q45 30 50 32" stroke="#15803D" stroke-width="2.5" fill="none" />
+    <circle cx="68" cy="54" r="15" fill="#F97316" />
+    <circle cx="55" cy="45" r="12" fill="#84CC16" />
+    <!-- Planta brotando -->
+    <path d="M90 35 Q100 20 110 32 Q95 45 90 35 Z" fill="#A7F3D0" />
+  </g>
+  <text x="200" y="195" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">
+    Prato Solidário &amp; Nutrição
+  </text>
+  <text x="200" y="218" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="13" fill="#D1FAE5">
+    Segurança alimentar para 500 famílias semanais
+  </text>
+</svg>

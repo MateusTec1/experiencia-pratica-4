@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Ilustração de voluntários e membros da comunidade colaborando em projetos sociais">
+  <defs>
+    <!-- Gradiente de Fundo -->
+    <linearGradient id="bgHeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EFF6FF" />
+    </linearGradient>
+
+    <!-- Gradiente Primário -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+
+    <!-- Gradiente Secundário -->
+    <linearGradient id="secondaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#4338CA" />
+    </linearGradient>
+
+    <!-- Sombra suave para cartões -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Fundo com cantos arredondados e borda sutil -->
+  <rect width="600" height="400" rx="16" fill="url(#bgHeroGrad)" stroke="#E2E8F0" stroke-width="1.5" />
+
+  <!-- Formas decorativas abstratas de fundo -->
+  <circle cx="520" cy="70" r="90" fill="#2563EB" opacity="0.05" />
+  <circle cx="70" cy="330" r="110" fill="#4F46E5" opacity="0.05" />
+  <circle cx="300" cy="200" r="160" fill="#0891B2" opacity="0.03" />
+
+  <!-- Base / Piso de apoio do cenário -->
+  <rect x="70" y="305" width="460" height="8" rx="4" fill="#CBD5E1" />
+  <rect x="120" y="313" width="360" height="3" rx="1.5" fill="#E2E8F0" />
+
+  <!-- ==========================================
+       PERSONAGEM 1: Voluntário com Prancheta (Esquerda)
+       ========================================== -->
+  <g transform="translate(130, 150)">
+    <!-- Cabeça e Cabelo -->
+    <circle cx="45" cy="32" r="20" fill="#FBBF24" />
+    <path d="M25 30 C25 14 65 14 65 30 C65 34 58 35 55 35 C45 35 35 38 25 30 Z" fill="#334155" />
+    <!-- Corpo / Camiseta Primária -->
+    <path d="M22 95 C22 60 68 60 68 95 Z" fill="url(#primaryGrad)" />
+    <!-- Braços e Prancheta -->
+    <rect x="42" y="70" width="28" height="36" rx="4" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" filter="url(#cardShadow)" />
+    <rect x="48" y="66" width="16" height="5" rx="2" fill="#2563EB" />
+    <!-- Linhas de checklist na prancheta -->
+    <line x1="47" y1="78" x2="63" y2="78" stroke="#0891B2" stroke-width="2" stroke-linecap="round" />
+    <line x1="47" y1="86" x2="63" y2="86" stroke="#0891B2" stroke-width="2" stroke-linecap="round" />
+    <line x1="47" y1="94" x2="57" y2="94" stroke="#0891B2" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- ==========================================
+       PERSONAGEM 2: Coordenadora Social (Centro)
+       ========================================== -->
+  <g transform="translate(245, 125)">
+    <!-- Cabeça e Cabelo -->
+    <circle cx="55" cy="35" r="22" fill="#F59E0B" />
+    <path d="M30 35 C30 12 80 12 80 35 C80 50 72 55 72 55 C65 52 45 52 38 55 C38 55 30 50 30 35 Z" fill="#1E293B" />
+    <!-- Corpo / Camiseta Secundária -->
+    <path d="M26 120 C26 72 84 72 84 120 Z" fill="url(#secondaryGrad)" />
+    <!-- Emblema de Corolário Solidário no Peito -->
+    <circle cx="55" cy="85" r="13" fill="#FFFFFF" />
+    <!-- Ícone geométrico de mãos/coração em vetor -->
+    <path d="M55 78 C51 74 46 76 46 80 C46 85 55 91 55 91 C55 91 64 85 64 80 C64 76 59 74 55 78 Z" fill="#16A34A" />
+  </g>
+
+  <!-- ==========================================
+       PERSONAGEM 3: Estudante com Laptop (Direita)
+       ========================================== -->
+  <g transform="translate(370, 155)">
+    <!-- Cabeça e Cabelo -->
+    <circle cx="45" cy="32" r="20" fill="#FBBF24" />
+    <path d="M26 28 C26 15 64 15 64 28 C64 36 60 38 56 38 C46 38 36 38 26 28 Z" fill="#475569" />
+    <!-- Corpo / Camiseta Acento -->
+    <path d="M22 90 C22 58 68 58 68 90 Z" fill="#0891B2" />
+    <!-- Laptop / Computador de capacitação -->
+    <rect x="25" y="70" width="40" height="24" rx="3" fill="#FFFFFF" stroke="#334155" stroke-width="2" filter="url(#cardShadow)" />
+    <polygon points="18,95 72,95 68,99 22,99" fill="#94A3B8" />
+    <rect x="31" y="75" width="28" height="14" rx="2" fill="#E2E8F0" />
+    <!-- Linha de código / tela -->
+    <line x1="35" y1="80" x2="48" y2="80" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="35" y1="84" x2="53" y2="84" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+
+  <!-- ==========================================
+       CARTÕES FLUTUANTES DE IMPACTO SOCIAL
+       ========================================== -->
+  <!-- Cartão 1: Capacitação (Esquerda Superior) -->
+  <g transform="translate(60, 50)" filter="url(#cardShadow)">
+    <rect width="145" height="44" rx="22" fill="#FFFFFF" stroke="#E2E8F0" />
+    <circle cx="23" cy="22" r="14" fill="#DBEAFE" />
+    <!-- Ícone de livro/estudo vetorizado -->
+    <path d="M17 19 L23 16 L29 19 L29 26 L23 23 L17 26 Z" fill="#2563EB" />
+    <text x="44" y="22" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Capacitação</text>
+    <text x="44" y="33" font-family="system-ui, sans-serif" font-size="9" font-weight="500" fill="#64748B">Educação Cidadã</text>
+  </g>
+
+  <!-- Cartão 2: Transparência 100% (Direita Superior) -->
+  <g transform="translate(395, 45)" filter="url(#cardShadow)">
+    <rect width="155" height="44" rx="22" fill="#FFFFFF" stroke="#E2E8F0" />
+    <circle cx="23" cy="22" r="14" fill="#DCFCE7" />
+    <!-- Ícone de checagem/aprovação vetorizado -->
+    <path d="M18 22 L21 25 L28 18" fill="none" stroke="#16A34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="44" y="22" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Transparência</text>
+    <text x="44" y="33" font-family="system-ui, sans-serif" font-size="9" font-weight="500" fill="#16A34A">100% Prestada</text>
+  </g>
+
+  <!-- Cartão 3: Solidariedade (Inferior Direito) -->
+  <g transform="translate(420, 240)" filter="url(#cardShadow)">
+    <rect width="135" height="38" rx="19" fill="#FFFFFF" stroke="#E2E8F0" />
+    <circle cx="20" cy="19" r="12" fill="#EEF2FF" />
+    <!-- Ícone de comunidade vetorizado -->
+    <circle cx="20" cy="16" r="4" fill="#4F46E5" />
+    <path d="M14 24 C14 21 26 21 26 24 Z" fill="#4F46E5" />
+    <text x="38" y="23" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#4F46E5">Rede Solidária</text>
+  </g>
+</svg>

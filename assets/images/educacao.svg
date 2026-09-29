@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Inclusão Digital para Jovens">
+  <defs>
+    <linearGradient id="gradEdu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="16" fill="url(#gradEdu)" />
+  <circle cx="80" cy="60" r="90" fill="#FFFFFF" opacity="0.06" />
+  <circle cx="340" cy="190" r="110" fill="#FFFFFF" opacity="0.08" />
+  <!-- Monitor e código -->
+  <g transform="translate(130, 45)">
+    <rect x="0" y="0" width="140" height="95" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="3" />
+    <rect x="55" y="95" width="30" height="22" fill="#334155" />
+    <rect x="35" y="117" width="70" height="8" rx="4" fill="#64748B" />
+    <!-- Linhas de código e tag html -->
+    <text x="16" y="32" font-family="monospace" font-size="14" fill="#38BDF8">&lt;/&gt; HTML5</text>
+    <rect x="16" y="44" width="75" height="5" rx="2" fill="#4ADE80" />
+    <rect x="16" y="55" width="95" height="5" rx="2" fill="#FDE047" />
+    <rect x="16" y="66" width="55" height="5" rx="2" fill="#F472B6" />
+  </g>
+  <text x="200" y="195" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">
+    Inclusão Digital &amp; Cidadania
+  </text>
+  <text x="200" y="218" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="13" fill="#BAE6FD">
+    Capacitação técnica para o mercado de trabalho
+  </text>
+</svg>

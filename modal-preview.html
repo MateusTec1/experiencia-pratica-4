@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal e Toast - Conexão Solidária</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #F9FAFB;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Modal Semantico com Backdrop Ativo -->
+  <dialog class="modal-dialog" open style="position: static; margin: auto; display: block;">
+    <header class="modal-header">
+      <h3>Confirmar Inscrição Solidária</h3>
+      <button type="button" class="toast-close" aria-label="Fechar">&times;</button>
+    </header>
+    <section class="modal-body">
+      <p>Você está prestes a se inscrever como voluntário no projeto <strong>"Prato Cheio Solidário"</strong> para a escala de distribuição de cestas aos sábados.</p>
+      <p style="margin-top: 16px; font-size: 14px; color: #4B5563;">Deseja confirmar a participação e receber o roteiro de orientação por e-mail?</p>
+    </section>
+    <footer class="modal-footer">
+      <button type="button" class="btn btn-outline" style="padding: 8px 16px;">Cancelar</button>
+      <button type="button" class="btn btn-primary" style="padding: 8px 16px;">Confirmar Participação</button>
+    </footer>
+  </dialog>
+
+  <!-- Notificacao Toast Ativa -->
+  <aside class="toast-container" style="position: fixed; bottom: 32px; right: 32px;" aria-live="polite">
+    <section class="toast">
+      <article class="toast-content">
+        <strong>Notificação do Sistema</strong>
+        <p>Dados enviados para a ONG com sucesso!</p>
+      </article>
+      <button type="button" class="toast-close" aria-label="Fechar notificação">&times;</button>
+    </section>
+  </aside>
+
+</body>
+</html>
